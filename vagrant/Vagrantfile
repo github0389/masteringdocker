@@ -1,0 +1,33 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  $installscript = <<-SCRIPT
+  echo installing gitlab...
+  sudo apt update
+  sudo apt install -y curl openssh-server ca-certificates
+  curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+  sudo EXTERNAL_URL="http://172.20.20.21:8081/" apt install gitlab-ee
+ 
+  echo installing jenkins...
+  echo installing java8.......
+  sudo apt update 
+  sudo apt install -y openjdk-8-jdk openjdk-8-jre
+  echo installing jenkins...........
+  wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+  sudo echo "deb https://pkg.jenkins.io/debian-stable binary/" >> /etc/apt/sources.list
+  sudo apt-get update
+  sudo apt-get install -y jenkins
+
+  SCRIPT
+
+  config.vm.box = "ubuntu/bionic64"
+  config.vm.hostname = "server"
+  config.vm.network "private_network", ip: "172.20.20.21"
+  config.vm.provision "shell", inline: $installscript
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 4096
+    vb.cpus = 2
+  end
+
+end
