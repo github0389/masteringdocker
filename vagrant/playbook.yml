@@ -1,0 +1,53 @@
+---
+- name: Deploy a web app
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: ping the hosts
+      ping:
+
+    - name: install all required dependencies 
+      apt: 
+        name: ['python', 'python-setuptools', 'python-dev', 'build-essential', 'python-pip', 'python-mysqldb']
+        state: present
+        update_cache: yes
+
+    - name: install MySQL database 
+      apt: 
+        name: ['mysql-server','mysql-client'] 
+        state: present
+
+    - name: Start MySQL service
+      service: 
+        name: mysql 
+        state: started 
+        enabled: yes
+
+    - name: Create App database
+      mysql_db: 
+        name: employee_db 
+        state: present
+        login_password: 'Passw0rd'
+     
+    - name: Create Database user
+      mysql_user:
+        name: db_user
+        password: Passw0rd
+        priv: '*.*:ALL'
+        state: present
+        host: '%'
+
+    - name: Install Python Flask Dependency
+      pip: 
+        name: ['flask', 'flask-mysql']
+        state: present
+
+    - name: Copy source code
+      copy: 
+        src: /home/vagrant/app.py 
+        dest: /opt/app.py
+
+    - name: Start web server
+      shell: FLASK_APP=app.py flask run --host=0.0.0.0
+

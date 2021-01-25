@@ -1,0 +1,72 @@
+{"log":"1:C 08 Dec 2020 19:07:24.240 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo\n","stream":"stdout","time":"2020-12-08T19:07:24.240729799Z"}
+{"log":"1:C 08 Dec 2020 19:07:24.240 # Redis version=6.0.9, bits=64, commit=00000000, modified=0, pid=1, just started\n","stream":"stdout","time":"2020-12-08T19:07:24.248733427Z"}
+{"log":"1:C 08 Dec 2020 19:07:24.240 # Configuration loaded\n","stream":"stdout","time":"2020-12-08T19:07:24.248890747Z"}
+{"log":"1:M 08 Dec 2020 19:07:24.257 * Running mode=standalone, port=0.\n","stream":"stdout","time":"2020-12-08T19:07:24.258116585Z"}
+{"log":"1:M 08 Dec 2020 19:07:24.258 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.\n","stream":"stdout","time":"2020-12-08T19:07:24.258335788Z"}
+{"log":"1:M 08 Dec 2020 19:07:24.258 # Server initialized\n","stream":"stdout","time":"2020-12-08T19:07:24.25835456Z"}
+{"log":"1:M 08 Dec 2020 19:07:24.258 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.\n","stream":"stdout","time":"2020-12-08T19:07:24.258485497Z"}
+{"log":"1:M 08 Dec 2020 19:07:24.258 * The server is now ready to accept connections at /var/run/redis/redis.sock\n","stream":"stdout","time":"2020-12-08T19:07:24.258950823Z"}
+{"log":"1:signal-handler (1607454447) Received SIGTERM scheduling shutdown...\n","stream":"stdout","time":"2020-12-08T19:07:27.550213832Z"}
+{"log":"1:M 08 Dec 2020 19:07:27.637 # User requested shutdown...\n","stream":"stdout","time":"2020-12-08T19:07:27.63857638Z"}
+{"log":"1:M 08 Dec 2020 19:07:27.637 * Removing the unix socket file.\n","stream":"stdout","time":"2020-12-08T19:07:27.638605992Z"}
+{"log":"1:M 08 Dec 2020 19:07:27.637 # Redis is now ready to exit, bye bye...\n","stream":"stdout","time":"2020-12-08T19:07:27.63860964Z"}
+{"log":"1:C 08 Dec 2020 19:07:29.096 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo\n","stream":"stdout","time":"2020-12-08T19:07:29.103935125Z"}
+{"log":"1:C 08 Dec 2020 19:07:29.103 # Redis version=6.0.9, bits=64, commit=00000000, modified=0, pid=1, just started\n","stream":"stdout","time":"2020-12-08T19:07:29.103970016Z"}
+{"log":"1:C 08 Dec 2020 19:07:29.103 # Configuration loaded\n","stream":"stdout","time":"2020-12-08T19:07:29.103974807Z"}
+{"log":"1:M 08 Dec 2020 19:07:29.105 * Running mode=standalone, port=0.\n","stream":"stdout","time":"2020-12-08T19:07:29.105513186Z"}
+{"log":"1:M 08 Dec 2020 19:07:29.105 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.\n","stream":"stdout","time":"2020-12-08T19:07:29.105525536Z"}
+{"log":"1:M 08 Dec 2020 19:07:29.105 # Server initialized\n","stream":"stdout","time":"2020-12-08T19:07:29.105537089Z"}
+{"log":"1:M 08 Dec 2020 19:07:29.105 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.\n","stream":"stdout","time":"2020-12-08T19:07:29.105540649Z"}
+{"log":"1:M 08 Dec 2020 19:07:29.105 * The server is now ready to accept connections at /var/run/redis/redis.sock\n","stream":"stdout","time":"2020-12-08T19:07:29.105848301Z"}
+{"log":"1:C 04 Jan 2021 21:19:48.528 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo\n","stream":"stdout","time":"2021-01-04T21:19:48.528433569Z"}
+{"log":"1:C 04 Jan 2021 21:19:48.528 # Redis version=6.0.9, bits=64, commit=00000000, modified=0, pid=1, just started\n","stream":"stdout","time":"2021-01-04T21:19:48.549461232Z"}
+{"log":"1:C 04 Jan 2021 21:19:48.528 # Configuration loaded\n","stream":"stdout","time":"2021-01-04T21:19:48.549537278Z"}
+{"log":"1:M 04 Jan 2021 21:19:48.549 * Running mode=standalone, port=0.\n","stream":"stdout","time":"2021-01-04T21:19:48.55007893Z"}
+{"log":"1:M 04 Jan 2021 21:19:48.549 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.\n","stream":"stdout","time":"2021-01-04T21:19:48.550088481Z"}
+{"log":"1:M 04 Jan 2021 21:19:48.549 # Server initialized\n","stream":"stdout","time":"2021-01-04T21:19:48.550108775Z"}
+{"log":"1:M 04 Jan 2021 21:19:48.549 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.\n","stream":"stdout","time":"2021-01-04T21:19:48.550113226Z"}
+{"log":"1:M 04 Jan 2021 21:19:48.550 * The server is now ready to accept connections at /var/run/redis/redis.sock\n","stream":"stdout","time":"2021-01-04T21:19:48.550155464Z"}
+{"log":"1:signal-handler (1610049664) Received SIGTERM scheduling shutdown...\n","stream":"stdout","time":"2021-01-07T20:01:04.957470951Z"}
+{"log":"1:M 07 Jan 2021 20:01:05.005 # User requested shutdown...\n","stream":"stdout","time":"2021-01-07T20:01:05.005715074Z"}
+{"log":"1:M 07 Jan 2021 20:01:05.005 * Removing the unix socket file.\n","stream":"stdout","time":"2021-01-07T20:01:05.005802317Z"}
+{"log":"1:M 07 Jan 2021 20:01:05.005 # Redis is now ready to exit, bye bye...\n","stream":"stdout","time":"2021-01-07T20:01:05.005808241Z"}
+{"log":"1:C 07 Jan 2021 20:01:29.138 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo\n","stream":"stdout","time":"2021-01-07T20:01:29.138547554Z"}
+{"log":"1:C 07 Jan 2021 20:01:29.138 # Redis version=6.0.9, bits=64, commit=00000000, modified=0, pid=1, just started\n","stream":"stdout","time":"2021-01-07T20:01:29.151170482Z"}
+{"log":"1:C 07 Jan 2021 20:01:29.138 # Configuration loaded\n","stream":"stdout","time":"2021-01-07T20:01:29.15152145Z"}
+{"log":"1:M 07 Jan 2021 20:01:29.139 * Running mode=standalone, port=0.\n","stream":"stdout","time":"2021-01-07T20:01:29.151535825Z"}
+{"log":"1:M 07 Jan 2021 20:01:29.140 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.\n","stream":"stdout","time":"2021-01-07T20:01:29.151541815Z"}
+{"log":"1:M 07 Jan 2021 20:01:29.140 # Server initialized\n","stream":"stdout","time":"2021-01-07T20:01:29.15155219Z"}
+{"log":"1:M 07 Jan 2021 20:01:29.140 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.\n","stream":"stdout","time":"2021-01-07T20:01:29.151556553Z"}
+{"log":"1:M 07 Jan 2021 20:01:29.140 * The server is now ready to accept connections at /var/run/redis/redis.sock\n","stream":"stdout","time":"2021-01-07T20:01:29.151560583Z"}
+{"log":"1:signal-handler (1610050614) Received SIGTERM scheduling shutdown...\n","stream":"stdout","time":"2021-01-07T20:16:54.16405682Z"}
+{"log":"1:M 07 Jan 2021 20:16:54.213 # User requested shutdown...\n","stream":"stdout","time":"2021-01-07T20:16:54.213769469Z"}
+{"log":"1:M 07 Jan 2021 20:16:54.213 * Removing the unix socket file.\n","stream":"stdout","time":"2021-01-07T20:16:54.213786047Z"}
+{"log":"1:M 07 Jan 2021 20:16:54.213 # Redis is now ready to exit, bye bye...\n","stream":"stdout","time":"2021-01-07T20:16:54.213789462Z"}
+{"log":"1:C 07 Jan 2021 22:31:24.826 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo\n","stream":"stdout","time":"2021-01-07T22:31:24.826479421Z"}
+{"log":"1:C 07 Jan 2021 22:31:24.826 # Redis version=6.0.9, bits=64, commit=00000000, modified=0, pid=1, just started\n","stream":"stdout","time":"2021-01-07T22:31:24.914395587Z"}
+{"log":"1:C 07 Jan 2021 22:31:24.826 # Configuration loaded\n","stream":"stdout","time":"2021-01-07T22:31:24.91441112Z"}
+{"log":"1:M 07 Jan 2021 22:31:24.827 * Running mode=standalone, port=0.\n","stream":"stdout","time":"2021-01-07T22:31:24.914420256Z"}
+{"log":"1:M 07 Jan 2021 22:31:24.827 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.\n","stream":"stdout","time":"2021-01-07T22:31:24.914463351Z"}
+{"log":"1:M 07 Jan 2021 22:31:24.827 # Server initialized\n","stream":"stdout","time":"2021-01-07T22:31:24.914482948Z"}
+{"log":"1:M 07 Jan 2021 22:31:24.827 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.\n","stream":"stdout","time":"2021-01-07T22:31:24.914486237Z"}
+{"log":"1:M 07 Jan 2021 22:31:24.828 * The server is now ready to accept connections at /var/run/redis/redis.sock\n","stream":"stdout","time":"2021-01-07T22:31:24.914488804Z"}
+{"log":"1:signal-handler (1610060079) Received SIGTERM scheduling shutdown...\n","stream":"stdout","time":"2021-01-07T22:54:39.730255719Z"}
+{"log":"1:M 07 Jan 2021 22:54:39.760 # User requested shutdown...\n","stream":"stdout","time":"2021-01-07T22:54:39.767402586Z"}
+{"log":"1:M 07 Jan 2021 22:54:39.760 * Removing the unix socket file.\n","stream":"stdout","time":"2021-01-07T22:54:39.767418901Z"}
+{"log":"1:M 07 Jan 2021 22:54:39.760 # Redis is now ready to exit, bye bye...\n","stream":"stdout","time":"2021-01-07T22:54:39.767422009Z"}
+{"log":"1:C 07 Jan 2021 22:55:07.397 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo\n","stream":"stdout","time":"2021-01-07T22:55:07.397137685Z"}
+{"log":"1:C 07 Jan 2021 22:55:07.397 # Redis version=6.0.9, bits=64, commit=00000000, modified=0, pid=1, just started\n","stream":"stdout","time":"2021-01-07T22:55:07.406647413Z"}
+{"log":"1:C 07 Jan 2021 22:55:07.397 # Configuration loaded\n","stream":"stdout","time":"2021-01-07T22:55:07.406661415Z"}
+{"log":"1:M 07 Jan 2021 22:55:07.641 * Running mode=standalone, port=0.\n","stream":"stdout","time":"2021-01-07T22:55:07.641384678Z"}
+{"log":"1:M 07 Jan 2021 22:55:07.641 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.\n","stream":"stdout","time":"2021-01-07T22:55:07.641425812Z"}
+{"log":"1:M 07 Jan 2021 22:55:07.641 # Server initialized\n","stream":"stdout","time":"2021-01-07T22:55:07.641438163Z"}
+{"log":"1:M 07 Jan 2021 22:55:07.641 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.\n","stream":"stdout","time":"2021-01-07T22:55:07.641541669Z"}
+{"log":"1:M 07 Jan 2021 22:55:07.641 * The server is now ready to accept connections at /var/run/redis/redis.sock\n","stream":"stdout","time":"2021-01-07T22:55:07.641894987Z"}
+{"log":"1:C 11 Jan 2021 07:03:54.924 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo\n","stream":"stdout","time":"2021-01-11T07:03:54.924411558Z"}
+{"log":"1:C 11 Jan 2021 07:03:54.924 # Redis version=6.0.9, bits=64, commit=00000000, modified=0, pid=1, just started\n","stream":"stdout","time":"2021-01-11T07:03:54.982290657Z"}
+{"log":"1:C 11 Jan 2021 07:03:54.924 # Configuration loaded\n","stream":"stdout","time":"2021-01-11T07:03:54.982335811Z"}
+{"log":"1:M 11 Jan 2021 07:03:54.957 * Running mode=standalone, port=0.\n","stream":"stdout","time":"2021-01-11T07:03:54.982343254Z"}
+{"log":"1:M 11 Jan 2021 07:03:54.957 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.\n","stream":"stdout","time":"2021-01-11T07:03:54.982346176Z"}
+{"log":"1:M 11 Jan 2021 07:03:54.957 # Server initialized\n","stream":"stdout","time":"2021-01-11T07:03:54.982376381Z"}
+{"log":"1:M 11 Jan 2021 07:03:54.957 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.\n","stream":"stdout","time":"2021-01-11T07:03:54.982380842Z"}
+{"log":"1:M 11 Jan 2021 07:03:54.958 * The server is now ready to accept connections at /var/run/redis/redis.sock\n","stream":"stdout","time":"2021-01-11T07:03:54.982383879Z"}

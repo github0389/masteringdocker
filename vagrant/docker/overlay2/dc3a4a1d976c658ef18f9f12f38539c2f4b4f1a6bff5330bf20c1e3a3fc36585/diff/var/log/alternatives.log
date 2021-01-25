@@ -1,0 +1,4 @@
+update-alternatives 2020-11-18 08:27:24: run with --quiet --install /usr/bin/pinentry pinentry /usr/bin/pinentry-curses 50 --slave /usr/share/man/man1/pinentry.1.gz pinentry.1.gz /usr/share/man/man1/pinentry-curses.1.gz
+update-alternatives 2020-11-18 08:27:24: link group pinentry updated to point to /usr/bin/pinentry-curses
+update-alternatives 2020-11-18 08:27:28: run with --quiet --remove pinentry /usr/bin/pinentry-curses
+update-alternatives 2020-11-18 08:27:28: link group pinentry fully removed

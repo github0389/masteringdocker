@@ -1,4 +1,4 @@
-# -*- mode: ruby [p-*-
+Dç ∂≈s # -*- mode: ruby [p-*-
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
@@ -70,8 +70,6 @@ Vagrant.configure("2") do |config|
   #install docker
   sudo apt -y update
   sudo apt -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-  sudo apt remove docker docker-engine docker.io containerd runc
-  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
   sudo apt -y update
@@ -94,22 +92,63 @@ Vagrant.configure("2") do |config|
   sudo npm install npm --global
   
   #install docker-py python module
-  sudo apt install python3-pip git pwgen vim
+  sudo apt install -y python3-pip git pwgen vim
   sudo pip3 install -y requests==2.14.2
-  sudo pip3 install -y docker-compose==1.25.0
+  sudo pip3 install docker-compose==1.25.0
   sudo su -
   git clone --depth 50 https://github.com/ansible/awx.git
   cd awx/installer/
-  vim inventory
+  #vim inventory
   pwgen -N 1 -s 30
   ansible-playbook -i inventory install.yml
 
   SCRIPT
+
+
+  $docker = <<-SCRIPT
+  #install ansible
+  sudo apt update && sudo apt -y upgrade
+  #sudo reboot
+  echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu bionic main" | sudo tee /etc/apt/sources.list.d/ansible.list
+  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
+  sudo apt -y update
+  sudo apt -y install ansible
+
+  #install docker
+  sudo apt -y update
+  sudo apt -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  sudo apt -y update
+  sudo apt -y install docker-ce docker-ce-cli containerd.io
+  sudo usermod -aG docker $USER
+  newgrp docker
+
+  #install docker compose
+  sudo apt install -y curl
+  curl -s https://api.github.com/repos/docker/compose/releases/latest \
+  | grep browser_download_url \
+  | grep docker-compose-Linux-x86_64 \
+  | cut -d '"' -f 4 \
+  | wget -qi -
+  chmod +x docker-compose-Linux-x86_64
+  sudo mv docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
+  
+  SCRIPT
+
   config.vm.box = "ubuntu/bionic64"
   # config.vm.provider "virtualbox" do |vb|
   #   vb.memory = 4096
   #   vb.cpus = 2
   # end
+
+  config.vm.define "target1" do |target1|
+    target1.vm.network "private_network", ip: "172.20.20.26"
+  end
+
+  config.vm.define "target2" do |target2|
+    target2.vm.network "private_network", ip: "172.20.20.27"
+  end
 
   config.vm.define "jenkins" do |jenkins|
     jenkins.vm.network "private_network", ip: "172.20.20.21"
@@ -139,11 +178,20 @@ Vagrant.configure("2") do |config|
   config.vm.define "ansible_tower" do |awx|
     awx.vm.hostname = "awx"
     awx.vm.network "private_network", ip: "172.20.20.25"
-    #awx.vm.provision "shell", inline: $awx
+    awx.vm.provision "shell", inline: $awx
     awx.vm.provider "virtualbox" do |vb|
       vb.memory = 4096
       vb.cpus = 2
     end
   end
 
+  config.vm.define "docker_host" do |docker|
+    docker.vm.hostname = "dockerhost"
+    docker.vm.network "private_network", ip: "172.20.20.25"
+    docker.vm.provision "shell", inline: $docker
+    docker.vm.provider "virtualbox" do |vb|
+      vb.memory = 4096
+      vb.cpus = 2
+    end
+  end
 end
