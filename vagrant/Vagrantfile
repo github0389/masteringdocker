@@ -1,4 +1,4 @@
-Dç ∂≈s # -*- mode: ruby [p-*-
+# -*- mode: ruby [p-*-
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|

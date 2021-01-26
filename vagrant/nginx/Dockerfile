@@ -6,7 +6,7 @@ RUN apk add --update nginx && \
     mkdir -p /tmp/nginx/
 COPY files/default.conf /etc/nginx/conf.d/default.conf
 COPY files/nginx.conf /etc/nginx/nginx.conf
-ADD  files/html.tar.gz /usr/share/nginx/html
+ADD  files/html.tar.gz /usr/share/nginx/
 EXPOSE 80/tcp
 ENTRYPOINT ["nginx"] 
 CMD ["-g", "daemon off;"]
